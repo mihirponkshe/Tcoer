@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale="1.0" >
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/taelogo.png" alt="logo"class="other-logo "></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>Contact us</h1>
+        </section>
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3785.369471818231!2d73.90585639999999!3d18.4215263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba318e71793%3A0xf75435d6d8816a8c!2sTrinity%20College%20of%20Engineering%20and%20Research!5e0!3m2!1sen!2sin!4v1711730870479!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                            <h5>KJEI,Tcoer,Saswad-Bopdev road</h5>
+                            <p>Yewalewdi,Pune</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                            <h5>8767932002</h5>
+                            <p>Monday to Saturday, 9AM to 4:30PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                            <h5>mihirponkshe2005@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="form_handler.php">
+                        <input type="text" placeholder="Enter your name" required >
+                        <input type="email" placeholder="Enter email-id" required >
+                        <input type="text" placeholder="Enter your subject" required >
+                        <textarea  rows="10" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Let us together share resposibility of sustaining the value of excellence <br>and innovation in the department.</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.instagram.com/tcoer_official/"><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.linkedin.com/company/tcoer/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <p>Made with <i class="fa-solid fa-heart"></i> by Mihir</p>
+        </section>
+        <!--javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu()
+            {
+                navLinks.style.right="0";
+                
+            }
+            function hideMenu()
+            {
+                navLinks.style.right="-200px";
+
+            }
+
+        </script>
+    </body>
+</html>

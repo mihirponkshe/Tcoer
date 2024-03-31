@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width",initial-scale="1.0" >
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/taelogo.png" alt="logo" class="other-logo "></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <h1>About us</h1>
+        </section>
+        <section class="aboutus">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the most successful department at TCOER</h1>
+                    <P>The Computer Department at TCOER excels due to its blend of theoretical knowledge <br> and practical experience, ensuring graduates are well-prepared for the industry.With innovative teaching methods and a focus on emerging technologies, the department boasts high placement rates and graduates who contribute significantly to the field.</P>
+                    <a href="https://www.kjei.edu.in/tcoer/" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/dept2.jpg" >
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Let us together share resposibility of sustaining the value of excellence <br>and innovation in the department.</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.instagram.com/tcoer_official/"><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.linkedin.com/company/tcoer/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <p>Made with <i class="fa-solid fa-heart"></i> by Mihir</p>
+        </section>
+        <!--javascript-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu()
+            {
+                navLinks.style.right="0";
+                
+            }
+            function hideMenu()
+            {
+                navLinks.style.right="-200px";
+
+            }
+
+        </script>
+    </body>
+</html>
